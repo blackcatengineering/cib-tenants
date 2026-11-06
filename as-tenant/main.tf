@@ -94,7 +94,7 @@ data "github_actions_registration_token" "tenant" {
 }
 
 module "runner" {
-  source = "git::https://github.com/blackcatengineering/cib-terraform-modules.git//modules/gh-runner-vm?ref=v1.1.1"
+  source = "git::https://github.com/blackcatengineering/cib-terraform-modules.git//modules/gh-runner-vm?ref=v1.1.2"
   count  = var.runner_enabled ? 1 : 0
 
   name                  = "${replace(var.domain, ".", "-")}-runner"

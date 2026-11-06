@@ -189,7 +189,7 @@ resource "openstack_networking_rbac_policy_v2" "shared_sg" {
 # versioning, and no other tenant is granted anything.
 
 module "state_bucket" {
-  source = "git::https://github.com/blackcatengineering/cib-terraform-modules.git//modules/state-bucket?ref=v1.1.1"
+  source = "git::https://github.com/blackcatengineering/cib-terraform-modules.git//modules/state-bucket?ref=v1.1.2"
 
   name                    = "${local.safe_name}-tfstate"
   grant_project_ids       = [openstack_identity_project_v3.project[local.primary_project].id]

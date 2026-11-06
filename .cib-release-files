@@ -1,0 +1,15 @@
+# Files cloud-in-a-box releases own in this repo (publish.py). Don't edit.
+.github/workflows/provision.yaml
+.gitignore
+README.md
+as-tenant/apply-all.sh
+as-tenant/main.tf
+as-tenant/variables.tf
+terraform/main.tf
+terraform/modules/tenant/github.tf
+terraform/modules/tenant/identity.tf
+terraform/modules/tenant/outputs.tf
+terraform/modules/tenant/variables.tf
+terraform/outputs.tf
+terraform/variables.tf
+terraform/versions.tf
